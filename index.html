@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Guide to Turning 18 in India</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            color: #666;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .intro {
+            background: #f8f9ff;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 20px;
+            border-left: 4px solid #667eea;
+            text-align: left;
+            line-height: 1.8;
+        }
+
+        .content-section {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: #764ba2;
+            font-size: 1.5em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        h4 {
+            color: #667eea;
+            font-size: 1.2em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #f8f9ff;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 5px solid #667eea;
+        }
+
+        .step {
+            background: #f0f4ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border: 2px solid #667eea;
+        }
+
+        .step-number {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 35px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .highlight {
+            background: #fff9c4;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .warning {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .tip {
+            background: #d1f2eb;
+            border-left: 5px solid #00bfa5;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        ul, ol {
+            margin-left: 30px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin: 10px 0;
+            line-height: 1.8;
+        }
+
+        .document-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .doc-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .doc-card h3 {
+            color: white;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .doc-card p {
+            line-height: 1.6;
+        }
+
+        footer {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .faq-item {
+            margin: 20px 0;
+            padding: 20px;
+            background: #f8f9ff;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid #e0e0e0;
+        }
+
+        .faq-item:hover {
+            background: #e8ecff;
+            border-color: #667eea;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            color: #667eea;
+            font-size: 1.1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            display: none;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 2px solid #ddd;
+        }
+
+        .faq-item.open .faq-answer {
+            display: block;
+        }
+
+        .faq-item.open .faq-question::after {
+            content: "−";
+        }
+
+        .faq-question::after {
+            content: "+";
+            font-size: 1.5em;
+            color: #667eea;
+        }
+
+        .info-box {
+            background: #e3f2fd;
+            border-left: 5px solid #2196f3;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .important-note {
+            background: #fce4ec;
+            border-left: 5px solid #e91e63;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .content-section {
+                padding: 25px;
+            }
+
+            header {
+                padding: 25px;
+            }
+
+            .document-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="smooth-scroll">
+    <div class="container">
+        <header>
+            <h1>🎓 Your Guide to Turning 18 in India</h1>
+            <p class="tagline">Everything you need to know about becoming a legal adult</p>
+            <div class="intro">
+                <p>Welcome! Turning 18 is an exciting milestone in your life. In India, this age marks your transition into legal adulthood, bringing with it a whole new set of rights, responsibilities, and opportunities. Along with these exciting changes come important administrative tasks that every young adult needs to complete.</p>
+                <p>This comprehensive guide is designed specifically for you - whether you're still 17 and planning ahead, or you've just turned 18 and wondering "what's next?" We'll walk you through every essential document you need, explain government processes in simple language, and help you navigate this transition with confidence.</p>
+                <p>The information here is practical, straightforward, and focused on what actually matters to you as a young adult in India today. Let's get started on this important journey!</p>
+            </div>
+        </header>
+
+        <div class="content-section">
+            <h2>🎉 What Changes When You Turn 18?</h2>
+            
+            <p>The day you turn 18, you officially become a legal adult in India. This isn't just symbolic - it fundamentally changes your legal status and what you can do. Here's a comprehensive look at what this means for you:</p>
+
+            <div class="card">
+                <h3>New Rights You Gain</h3>
+                <ul>
+                    <li><strong>Right to Vote:</strong> This is perhaps the most celebrated right. You can now participate in elections at all levels - from local municipal elections to state assembly elections to national parliamentary elections. Your vote matters, and you have the power to shape India's democracy.</li>
+                    <li><strong>Sign Legal Contracts:</strong> You can now enter into legally binding agreements without parental consent. This includes rental agreements, employment contracts, business agreements, and more. You're legally responsible for any contract you sign.</li>
+                    <li><strong>Open Independent Bank Accounts:</strong> You can open and operate your own bank account, apply for credit cards, take loans, and manage your finances completely independently.</li>
+                    <li><strong>Apply for Passport:</strong> You can apply for an Indian passport independently without parental consent, opening up international travel opportunities.</li>
+                    <li><strong>Get Married:</strong> While the legal age is 18 for women and 21 for men currently, at 18 you're old enough to make this decision (for women) or be closer to it (for men).</li>
+                    <li><strong>Stand for Elections:</strong> While you can't run for Parliament yet (minimum age 25), you can contest local body elections in many states.</li>
+                    <li><strong>Buy Property:</strong> You can purchase property, land, or vehicles in your own name.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>New Responsibilities</h3>
+                <ul>
+                    <li><strong>Legal Liability:</strong> You're now fully responsible for your actions under Indian law. This includes criminal liability - you'll be tried as an adult for any offenses.</li>
+                    <li><strong>Financial Responsibility:</strong> Any debts, loans, or financial commitments you take on are your responsibility to fulfill.</li>
+                    <li><strong>Tax Obligations:</strong> If you earn income above the basic exemption limit (currently ₹2.5 lakhs per year), you're required to file income tax returns.</li>
+                    <li><strong>Contractual Obligations:</strong> Any contract you sign is legally enforceable, so you need to read and understand what you're agreeing to.</li>
+                    <li><strong>Civic Duties:</strong> While not strictly enforced, you have a responsibility to be an informed citizen and participate in democratic processes.</li>
+                </ul>
+            </div>
+
+            <div class="important-note">
+                <strong>Important:</strong> With these new rights and responsibilities, it's crucial to make informed decisions. Don't feel pressured to do everything at once. Take your time to understand each process, ask questions when you're unsure, and seek guidance from trusted adults when needed. Being an adult doesn't mean you have to have all the answers immediately - it means being willing to learn and take responsibility for your choices.
+            </div>
+
+            <h3>Essential Documents Overview</h3>
+            <p>As a new adult, you'll need several key documents for various purposes - from education to employment to simply proving your identity. Here's what each document does and why you need it:</p>
+
+            <div class="document-grid">
+                <div class="doc-card">
+                    <h3>📇 Aadhaar Card</h3>
+                    <p><strong>Purpose:</strong> Your primary identity and address proof</p>
+                    <p><strong>Why update:</strong> Your childhood photo needs updating; required for all other documents</p>
+                    <p><strong>Uses:</strong> Bank account, SIM card, admissions, scholarships, government services</p>
+                </div>
+                <div class="doc-card">
+                    <h3>💳 PAN Card</h3>
+                    <p><strong>Purpose:</strong> Permanent Account Number for financial transactions</p>
+                    <p><strong>Why needed:</strong> Mandatory for banking, taxes, high-value purchases</p>
+                    <p><strong>Uses:</strong> Opening bank account, filing tax returns, buying property, getting credit card</p>
+                </div>
+                <div class="doc-card">
+                    <h3>🚗 Driving License</h3>
+                    <p><strong>Purpose:</strong> Legal permission to drive vehicles</p>
+                    <p><strong>Why needed:</strong> Required by law to drive on Indian roads</p>
+                    <p><strong>Uses:</strong> Driving legally, serves as photo ID and age proof</p>
+                </div>
+                <div class="doc-card">
+                    <h3>🗳️ Voter ID Card</h3>
+                    <p><strong>Purpose:</strong> Exercise your democratic right to vote</p>
+                    <p><strong>Why needed:</strong> To participate in elections</p>
+                    <p><strong>Uses:</strong> Voting, serves as address proof and photo ID</p>
+                </div>
+            </div>
+
+            <div class="tip">
+                <strong>💡 Pro Tip:</strong> Start with Aadhaar and PAN - these two documents are the foundation. Most other processes require one or both of these. Once you have them, everything else becomes easier. Don't try to get everything at once; prioritize based on your immediate needs.
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>📇 Aadhaar Card Update: Complete Guide</h2>
+            
+            <p>Your Aadhaar card is the most fundamental identity document in India. If you got yours issued before turning 18, it likely has your childhood photograph and possibly outdated information. Updating it is not just recommended - it's essential for smooth functioning as an adult.</p>
+
+            <div class="card">
+                <h3>Why Updating Your Aadhaar Matters</h3>
+                <p>Many people wonder if updating Aadhaar is really necessary. Here's why it absolutely is:</p>
+                <ul>
+                    <li><strong>Photo Mismatch Issues:</strong> Your childhood photo won't match your current appearance, causing problems at banks, exam centers, and government offices</li>
+                    <li><strong>Legal Requirement:</strong> UIDAI mandates updating your Aadhaar after turning 5 and then after turning 15 to keep biometric data current</li>
+                    <li><strong>Verification Problems:</strong> Outdated biometrics (fingerprints, iris scan) may not match, causing authentication failures</li>
+                    <li><strong>Address Changes:</strong> If you've moved, your address needs updating for proper documentation</li>
+                    <li><strong>Professional Requirements:</strong> Many employers and institutions require a current Aadhaar that matches your appearance</li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <strong>Good to Know:</strong> Aadhaar update is mandatory for everyone when they complete 5 years of age and again when they complete 15 years of age. This ensures that the biometric information (fingerprints and iris) and photograph remain current as you grow. There's a specific provision for this in UIDAI regulations.
+            </div>
+
+            <h3>Complete Step-by-Step Process</h3>
+            
+            <div class="step">
+                <span class="step-number">1</span>
+                <strong>Decide: Online or Offline?</strong>
+                <p><strong>Online Update:</strong> Can update demographic details (name, address, mobile, email) from home. However, biometric and photo updates require a center visit.</p>
+                <p><strong>Offline Update:</strong> Visit an Aadhaar Enrollment Center for biometric, photo, and demographic updates. This is what most 18-year-olds need.</p>
+                <p><strong>Recommendation:</strong> Since you need a new photo and biometrics, plan for an offline visit to an enrollment center.</p>
+            </div>
+
+            <div class="step">
+                <span class="step-number">2</span>
+                <strong>Find Your Nearest Aadhaar Center</strong>
+                <ul>
+                    <li>Visit <span class="highlight">uidai.gov.in</span></li>
+                    <li>Click on "Aadhaar Enrollment Center" or "Locate an Enrolment Center"</li>
+                    <li>Enter your pin code or select your state and district</li>
+                    <li>You'll see a list of centers with addresses and contact numbers</li>
+                    <li><strong>Tip:</strong> Call the center beforehand to confirm timings and whether appointment is needed</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <span class="step-number">3</span>
+                <strong>Book an Appointment (Recommended)</strong>
+                <ul>
+                    <li>Go to <span class="highlight">uidai.gov.in</span> and select "Book an Appointment"</li>
+                    <li>Choose "Aadhaar Update" as the service type</li>
+                    <li>Select your nearest center and available time slot</li>
+                    <li>You'll receive a confirmation SMS with appointment details</li>
+                    <li><strong>Note:</strong> Walk-ins are allowed but appointments reduce waiting time significantly</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <span class="step-number">4</span>
+                <strong>Prepare Your Documents</strong>
+                <p><strong>Must Carry:</strong></p>
+                <ul>
+                    <li>Your existing Aadhaar card (original or e-Aadhaar printout)</li>
+                    <li>Aadhaar number (memorize it or write it down)</li>
+                    <li>Mobile number linked to Aadhaar (you'll receive OTP)</li>
+                </ul>
+                <p><strong>For Address Update (if needed):</strong></p>
+                <ul>
+                    <li>Valid address proof - any one of: Bank passbook, Passport, Voter ID, Driving License, School certificate, Parent's Aadhaar</li>
+                    <li>Document must clearly show your current address</li>
+                </ul>
+                <p><strong>For Name Update (if needed):</strong></p>
+                <ul>
+                    <li>Birth certificate, school certificate, or gazette notification</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <span class="step-number">5</span>
+                <strong>Visit the Enrollment Center</strong>
+                <p><strong>What to expect:</strong></p>
+                <ul>
+                    <li><strong>Token/Queue:</strong> You'll receive a token number. Wait for your turn.</li>
+                    <li><strong>Document Verification:</strong> The operator will verify your existing Aadhaar and any update documents</li>
+                    <li><strong>Form Filling:</strong> Fill the Aadhaar update form or let the operator fill it. <strong>Verify every detail carefully before signing!</strong></li>
+                    <li><strong>New Photograph:</strong> A new photograph will be taken at the center. Dress presentably and remove glasses if possible</li>
+                    <li><strong>Biometric Capture:</strong> Your fingerprints (all 10 fingers) and iris scans will be recorded</li>
+                    <li><strong>OTP Verification:</strong> You'll receive an OTP on your registered mobile. Provide it to the operator</li>
+                    <li><strong>Review:</strong> Carefully review all information displayed on screen before final submission</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <span class="step-number">6</span>
+                <strong>Pay the Fee</strong>
+                <ul>
+                    <li><strong>First biometric update:</strong> Free if done within the stipulated time after turning 5 and 15</li>
+                    <li><strong>Photo/Biometric update:</strong> Generally ₹50 + GST</li>
+                    <li><strong>Demographic updates:</strong> Free online; may have charges at center</li>
+                    <li><strong>Payment modes:</strong> Cash or online payment at center</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <span class="step-number">7</span>
+                <strong>Collect Your Acknowledgment</strong>
+                <ul>
+                    <li>You'll receive an acknowledgment slip with a 14-digit Update Request Number (URN)</li>
+                    <li><strong>Keep this safe!</strong> You'll need it to track your update status</li>
+                    <li>You'll also receive SMS confirmation</li>
+                    <li>Save a photo of the acknowledgment slip on your phone</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <span class="step-number">8</span>
+                <strong>Track Your Update Status</strong>
+                <ul>
+                    <li>Visit <span class="highlight">uidai.gov.in</span></li>
+                    <li>Click on "Check Aadhaar Update Status"</li>
+                    <li>Enter your 14-digit URN and captcha code</li>
+                    <li>You'll see status: Under Process, Approved, or Rejected</li>
+                    <li><strong>Timeline:</strong> Updates usually process within 7-15 days</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <span class="step-number">9</span>
+                <strong>Receive Your Updated Aadhaar</strong>
+                <ul>
+                    <li><strong>Physical Card:</strong> Will arrive by post at your registered address within 15-20 days</li>
+                    <li><strong>e-Aadhaar:</strong> Once status shows "Approved," download e-Aadhaar from uidai.gov.in using your Aadhaar number</li>
+                    <li><strong>Password:</strong> For e-Aadhaar PDF, the password is your name (first 4 letters in capitals) + year of birth. Example: If name is Rahul and DOB is 2006, password is RAHU2006</li>
+                </ul>
+            </div>
+
+            <div class="warning">
+                <strong>⚠️ Common Mistakes to Avoid:</strong>
+                <ul>
+                    <li><strong>Wrong mobile number:</strong> Make sure the mobile number you provide is active and with you. You'll need it for OTP</li>
+                    <li><strong>Not verifying details:</strong> Check EVERY detail on screen before confirming. Errors require another update request</li>
+                    <li><strong>Poor quality documents:</strong> If submitting address proof, ensure it's clear and readable. Blurry documents get rejected</li>
+                    <li><strong>Losing URN:</strong> Without your Update Request Number, tracking becomes difficult</li>
+                    <li><strong>Not checking status:</strong> If rejected, you need to reapply. Check status regularly</li>
+                    <li><strong>Glasses in photo:</strong> Remove glasses for the photograph unless you wear them due to medical reasons</li>
+                </ul>
+            </div>
+
+            <div class="tip">
+                <strong>💡 Pro Tips:</strong>
+                <ul>
+                    <li><strong>Best time to visit:</strong> Weekday mornings (9-11 AM) usually have shorter queues</li>
+                    <li><strong>Dress code:</strong> Wear something you'd be comfortable having on your ID for the next few years</li>
+                    <li><strong>Mobile number update:</strong> If you need to update your mobile number and don't have OTP access, carry a known person with Aadhaar to the center - they can help verify you</li>
+                    <li><strong>Multiple updates:</strong> You can update address, mobile number, and biometrics all in one visit</li>
+                    <li><strong>e-Aadhaar is valid:</strong> Don't wait for physical card. e-Aadhaar is legally valid everywhere</li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <strong>What if Update is Rejected?</strong><br>
+                If your update is rejected (check reason in status), don't panic:
+                <ul>
+                    <li>Common reasons: Document not clear, mismatch in details, biometric not captured properly</li>
+                    <li>Solution: Visit the center again with better documents or for fresh biometric capture</li>
+                    <li>No limit on attempts - you can keep trying until successful</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>💳 PAN Card Application: Complete Guide</h2>
+            
+            <p>The Permanent Account Number (PAN) is perhaps the most important financial document you'll own. It's not just a tax document - it's your financial identity in India. Let's understand everything about PAN and how to get yours.</p>
+
+            <div class="card">
+                <h3>What Exactly is PAN?</h3>
+                <p>PAN is a 10-character alphanumeric identifier (like ABCDE1234F) issued by the Income Tax Department. Think of it as your financial fingerprint - unique to you and required for almost all financial activities in India.</p>
+                <p><strong>The PAN structure:</strong></p>
+                <ul>
+                    <li>First 3 characters: Alphabets (series)</li>
+                    <li>4th character: Your status (P for individual, F for firm, C for company, etc.)</li>
+                    <li>5th character: First letter of your surname/name</li>
+                    <li>Next 4 characters: Numbers (0001 to 9999)</li>
+                    <li>Last character: Alphabet (check digit)</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Why You Absolutely Need a PAN Card</h3>
+                <p>PAN is mandatory for:</p>
+                <ul>
+                    <li><strong>Opening a bank account:</strong> No bank will open an account without PAN</li>
+                    <li><strong>Filing income tax returns:</strong> Even if you don't earn enough to pay tax, you need PAN to file returns</li>
+                    <li><strong>Applying for credit/debit cards:</strong> Banks require PAN for all card applications</li>
+                    <li><strong>Transactions above ₹50,000:</strong> Any purchase or sale above this amount requires quoting PAN</li>
+                    <li><strong>Buying/selling property or vehicles:</strong> Mandatory for registration</li>
+                    <li><strong>Receiving payments:</strong> Freelancers, part-timers need PAN for payment processing</li>
+                    <li><strong>Applying for loans:</strong> Personal, education, or any other loan requires PAN</li>
+                    <li><strong>Starting a business:</strong> Absolutely essential for business registration</li>
+                    <li><strong>Foreign transactions:</strong> Receiving money from abroad requires PAN</li>
+                    <li><strong>Mutual funds/investments:</strong> Can't invest without PAN</li>
+                </ul>
+            </div>
+
+            <div class="important-note">
+                <strong>Important Legal Point:</strong> It is ILLEGAL to have more than one PAN card. If you accidentally apply twice, you must surrender one. Having multiple PANs can lead to penalties up to ₹10,000. So apply once and keep it safe!
+            </div>
+
+            <h3>Two Methods to Apply for PAN</h3>
+
+            <h4>Method 1: Online Application (Recommended - Faster & Easier)</h4>
+
+            <div class="step">
+                <span class="step-number">1</span>
+                <strong>Choose Your Portal</strong>
+                <p>There are two authorized portals for PAN application:</p>
+                <ul>
+                    <li><strong>NSDL:</strong> <span class="highlight">onlineservices.nsdl.com/paam/endUserRegisterContact.html</span></li>
+                    <li><strong>UTIITSL:</strong> <span class="highlight">www.utiitsl.com/UTIITSL_SITE/PAN</span></li>
+                </ul>
+                <p>Both are official and equally valid. Choose either one.</p>
+            </div>
+
+            <div class="step">
+                <span class="step-number">2</span>
+                <strong>Select Application Category</strong>
+                <ul>
+                    <li>Click on "Apply for New PAN Card"</li>
+                    <li>Select "Individual" as applicant type</li>
+                    <li>Choose "New PAN - Indian Citizen (Form 49A)"</li>
+                    <li>Select "Physical PAN Card" or "e-PAN" (e-PAN is instant, costs less, but is digital only)</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <span class="step-number">3</span>
+                <strong>Fill the Application Form (Form 49A)</strong>
+                <p>This is the most important step. You'll need to provide:</p>
+                <ul>
+                    <li><strong>Personal Details:</strong>
+                        <ul>
+                            <li>Full name (exactly as per Aadhaar)</li>
+                            <li>Date of birth</li>
+                            <li>Gender</li>
+                            <li>Father's name (mandatory)</li>
+                            <li>Mother's name (optional but recommended)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Contact Details:</strong>
+                        <ul>
+                            <li>Mobile number (you'll receive updates here)</li>
+                            <li>Email ID (acknowledgment will be sent here)</li>
+                            <li>Complete address with pin code</li>
+                        </ul>
+                    </li>
+                    <li><strong>Aadhaar Details:</strong>
+                        <ul>
+                            <li>Your 12-digit Aadhaar number (mandatory)</li>
+                            <li>Name should match Aadhaar exactly</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p><strong>Critical:</strong> Double-check spelling of your name. It should exactly match your Aadhaar card. Even a small mismatch can cause problems later.</p>
+            </div>
+
+            <div class="step">
+                <span class="step-number">4</span>
+                <strong>Upload Required Documents</strong>
+                <p>You need to upload scanned copies (JPEG/PDF format) of:</p>
+                <ul>
+                    <li><strong>Identity Proof:</strong> Aadhaar card (mandatory - both front and back)</li>
